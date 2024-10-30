@@ -1,0 +1,44 @@
+
+<ion-content class="ion-padding">
+ <ion-button style="padding-top: 40%;" expand="block" (click)="setOpen(true)">Crear Nuevo Reporte</ion-button>
+  <ion-modal [isOpen]="isModalOpen">
+    <ng-template>
+      <ion-header>
+        <ion-toolbar>
+          <ion-title>Reporte</ion-title>
+          <ion-buttons slot="end">
+            <ion-button (click)="setOpen(false)">Cerrar</ion-button>
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content class="ion-padding">
+        <ion-card-content>
+         <h1> <label >Hora Actual:</label>
+          <ion-input  
+          fill="solid"
+          ></ion-input>
+          <label >Novedades:</label>
+          <ion-input  
+          fill="solid"
+          ></ion-input>
+          <label>Problemas:</label>
+          <ion-input  
+          fill="solid"
+          ></ion-input>
+        </h1>
+        </ion-card-content>
+
+        <ion-button expand="block" (click)="presentToast('bottom')">Enviar Reporte</ion-button>
+
+
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+</ion-content>
+
+<ion-row>
+  <ion-col class="ion-text-start">
+    
+  </ion-col>
+
+</ion-row>
